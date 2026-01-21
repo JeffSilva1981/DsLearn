@@ -22,3 +22,7 @@ INSERT INTO tb_course(name, img_uri, img_gray_uri) VALUES ('APIs REST com Spring
 
 INSERT INTO tb_offer(edition, start_moment, end_moment, course_id) VALUES ('1.0', TIMESTAMP WITH TIME ZONE '2025-01-14T10:00:00Z', TIMESTAMP WITH TIME ZONE '2027-07-14T10:00:00Z', 1);
 INSERT INTO tb_offer(edition, start_moment, end_moment, course_id) VALUES ('2.0', TIMESTAMP WITH TIME ZONE '2025-12-14T10:00:00Z', TIMESTAMP WITH TIME ZONE '2027-12-14T10:00:00Z', 1);
+
+INSERT INTO tb_resource(title, description, position, img_Uri, type, offer_id) VALUES ('Trilha HTML', 'New Trilha', 1, 'https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/java.png', 1, 1);
+INSERT INTO tb_resource(title, description, position, img_Uri, type, offer_id) VALUES ('Trilha JavaScrip', 'New Trilha', 2, 'https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/java.png', 2, 2);
+INSERT INTO tb_resource(title, description, position, img_Uri, type, offer_id) VALUES ('Trilha Java O.O', 'New Trilha', 3, 'https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/java.png', 1, 1);
