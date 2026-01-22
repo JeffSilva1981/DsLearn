@@ -26,3 +26,8 @@ INSERT INTO tb_offer(edition, start_moment, end_moment, course_id) VALUES ('2.0'
 INSERT INTO tb_resource(title, description, position, img_Uri, type, offer_id) VALUES ('Trilha HTML', 'New Trilha', 1, 'https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/java.png', 1, 1);
 INSERT INTO tb_resource(title, description, position, img_Uri, type, offer_id) VALUES ('Trilha JavaScrip', 'New Trilha', 2, 'https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/java.png', 2, 2);
 INSERT INTO tb_resource(title, description, position, img_Uri, type, offer_id) VALUES ('Trilha Java O.O', 'New Trilha', 3, 'https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/java.png', 1, 1);
+
+INSERT INTO tb_section(title, description, position, img_Uri, resource_id, prerequisite_id) VALUES ('Capitulo 1', 'Iniciando curso', 1, 'https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/java.png', 1, null);
+INSERT INTO tb_section(title, description, position, img_Uri, resource_id, prerequisite_id) VALUES ('Capitulo 2', 'Continuando curso', 2, 'https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/java.png', 1, 1);
+INSERT INTO tb_section(title, description, position, img_Uri, resource_id, prerequisite_id) VALUES ('Capitulo 3', 'Finalizando curso', 3, 'https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/java.png', 1, 2);
+

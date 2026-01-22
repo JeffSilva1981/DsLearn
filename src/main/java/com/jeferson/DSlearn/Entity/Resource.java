@@ -3,6 +3,9 @@ package com.jeferson.DSlearn.Entity;
 import com.jeferson.DSlearn.Enums.ResourceType;
 import jakarta.persistence.*;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @Entity
 @Table(name = "tb_resource")
 public class Resource {
@@ -19,6 +22,9 @@ public class Resource {
     @ManyToOne
     @JoinColumn(name = "offer_id")
     private Offer offer;
+
+    @OneToMany(mappedBy = "resource")
+    private List<Section> sections = new ArrayList<>();
 
     public Resource(Long id, String title, String description, Integer position, String imgUri, ResourceType type, Offer offer) {
         this.id = id;
